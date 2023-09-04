@@ -1,0 +1,11 @@
+version: '3'
+services:
+  laravel.test:
+    image: 'laravelsail/php74-composer:latest'
+    ports:
+      - '80:80'
+  mysql:
+    image: 'mysql:5.7'
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: 'sail'
