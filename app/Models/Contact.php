@@ -9,5 +9,5 @@ class Contact extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    protected $fillable = ['customer', 'date', 'comment'];
+    protected $fillable = ['customer', 'email', 'contact', 'comment'];
 }
