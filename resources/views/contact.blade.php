@@ -80,12 +80,17 @@
                     <span class="text-danger">{{ $message }}</span>
                 @enderror
 
-                <input class="form__input" type="text" name="date" placeholder="Date">
-                @error('date')
+                <input class="form__input" type="email" name="email" placeholder="Email">
+                @error('email')
                     <span class="text-danger">{{ $message }}</span>
                 @enderror
 
-                <input class="form__input" type="text" name="comment" placeholder="Comment">
+                <input class="form__input" type="number" name="contact" placeholder="Contact Tel">
+                @error('contact')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+
+                <input class="form__input" type="textarea" name="comment" placeholder="Comment">
                 @error('comment')
                     <span class="text-danger">{{ $message }}</span>
                 @enderror

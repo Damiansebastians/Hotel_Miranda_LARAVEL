@@ -15,9 +15,9 @@ Route::get('/', function () {
 Route::get('/rooms', [RoomController::class, 'index']);
 Route::get('/rooms/{id}', [RoomsController::class, 'showDetails']);
 
-Route::get('/aboutUs', [AboutUsController::class, 'showAbout']);
+Route::get('/aboutUs', [AboutUsController::class, 'index']);
 
-Route::get("/offers", [OffersController::class, "showOffers"]);
+Route::get("/offers", [OffersController::class, "index"]);
 
-Route::get('/contact',[ContactController::class, 'showContact']);
+Route::get('/contact',[ContactController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'store']);
