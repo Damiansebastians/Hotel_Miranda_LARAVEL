@@ -66,15 +66,32 @@
             </div>
         </section>
 
-        <!-- FORM -->
-        <form action="">
+        @if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+    @else
+    <!-- FORM -->
+                <form method="post">
+            @csrf
             <div class="form">
-                <input class="form__input" type="text" placeholder="Your full name">
-                <input class="form__input" type="tel" placeholder="Add phone number">
-                <input class="form__input" type="email" placeholder="Enter email address">
-                <input class="form__input" type="text" placeholder="Enter subject">
-                <input class="form__input" id="input__message" type="text" placeholder="Enter message">
+                <input class="form__input" type="text" name="customer" placeholder="Customer">
+                @error('customer')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+
+                <input class="form__input" type="text" name="date" placeholder="Date">
+                @error('date')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+
+                <input class="form__input" type="text" name="comment" placeholder="Comment">
+                @error('comment')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+                
                 <button class="form__button" type="submit">Send</button>
             </div>
         </form>
-    </main>
+    @endif
+</main>

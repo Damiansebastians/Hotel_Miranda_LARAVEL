@@ -9,7 +9,7 @@ use App\Http\Controllers\RoomController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/rooms', [RoomController::class, 'index']);
@@ -20,3 +20,4 @@ Route::get('/aboutUs', [AboutUsController::class, 'showAbout']);
 Route::get("/offers", [OffersController::class, "showOffers"]);
 
 Route::get('/contact',[ContactController::class, 'showContact']);
+Route::post('/contact', [ContactController::class, 'store']);
