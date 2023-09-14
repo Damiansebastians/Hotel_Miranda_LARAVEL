@@ -1280,10 +1280,10 @@
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
   }
-  .info__content-item .info__content-img {
+  .info__content-img {
     margin: 44px 50px 18px;
   }
-  .info__content-item .info__content-text {
+  .info__content-text {
     color: #222;
     text-align: center;
     font-size: 12px;
@@ -1295,19 +1295,14 @@
     margin-bottom: 38px;
     text-align: center;
   }
-  .info__content #info__bbq {
+  #info__bbq {
     display: none;
-  }
-  .info__content #item-gold {
-    background-color: #BEAD8E;
-  }
-  .info__content #item-gold p {
-    color: #ffffff;
   }
   .info__content-item:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
+    background-color: #e1e1e1;
   }
   .restaurant {
     background: #ffffff;
@@ -1715,21 +1710,33 @@
 }
 @media only screen and (min-width: 1000px) {
   .pageDetails {
+    width: 80%;
     padding: 0 20px;
     max-width: 1210px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 120px auto 60px;
   }
   .pageDetails__container {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 5%;
+    margin-bottom: 100px;
   }
   .pageDetails__container__box {
     width: 100%;
     max-width: 770px;
     padding: 0;
+    position: relative;
+  }
+  .pageDetails__container__box--items {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 90%;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .pageDetails__container__box--items h4 {
     font-size: 14px;
@@ -1739,13 +1746,229 @@
     line-height: 15px;
   }
   .pageDetails__container__box--items h2 {
-    font-size: 48px;
+    font-size: 36px;
     font-family: "Old Standard TT", sans-serif;
     line-height: 48px;
     letter-spacing: -1.44px;
-    margin-right: 115px;
-    margin: 12px 0 16px;
+    margin-top: 12px;
     color: #222;
+  }
+  .pageDetails__container__box--items--price {
+    color: #bead8e;
+    font-family: "Archivo";
+    font-weight: 700;
+    font-size: 40px;
+    display: inline-flex;
+  }
+  .pageDetails__container__box--items--price sub {
+    font-size: 16px;
+  }
+  .pageDetails__container__box--image img {
+    margin-top: 60px;
+    width: 100%;
+  }
+  .pageDetails__container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pageDetails__container__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pageDetails__container__form--title {
+    color: #222;
+    text-align: right;
+    font-family: "Archivo";
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.54px;
+  }
+  .pageDetails__container__form--label {
+    font: normal 700 14px/15.2px "Archivo", sans-serif;
+    font-size: 14px;
+    line-height: 15.2px;
+  }
+  .pageDetails__container__form--input {
+    border: none;
+    outline: none;
+    background-color: #f8f8f8;
+    font: normal 400 26px/28.3px "Archivo", sans-serif;
+    font-size: 14px;
+    line-height: 15.2px;
+    color: #777;
+    padding: 15px;
+    position: relative;
+    max-width: 330px;
+    cursor: text;
+  }
+  .pageDetails__container__form--btn {
+    font-family: "Archivo";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 2.8px;
+    background-color: #BEAD8E;
+    color: #FFFFFF;
+    width: 217px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 290px;
+    border: #bead8e;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .pageDetails__container__form--btn:hover {
+    transform: scale(1.1);
+  }
+  .pageDetails__container__description {
+    color: #777;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .pageDetails__amenities {
+    width: 70%;
+    padding: 50px;
+  }
+  .pageDetails__amenities hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 40px;
+  }
+  .pageDetails__amenities--title {
+    color: #222;
+    font-family: "Old Standard TT";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .pageDetails__amenities__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pageDetails__amenities__container--items {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-bottom: 15px;
+  }
+  .pageDetails__amenities__container--items--text {
+    color: #777;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .pageDetails__person {
+    margin-top: 50px;
+    background: #ffffff;
+    box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.59);
+    padding: 60px 25px 50px;
+    max-width: 370px;
+    position: relative;
+  }
+  .pageDetails__person__avatar {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    background-color: #d5d5d5;
+    margin: 10px auto 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .pageDetails__person__avatar--image {
+    width: 100%;
+  }
+  .pageDetails__person__avatar--check {
+    position: absolute;
+    top: 80px;
+    right: 90px;
+  }
+  .pageDetails__person__title {
+    text-align: center;
+    font-family: "Old Standard TT", serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #222;
+    font-weight: 400;
+    letter-spacing: -0.9px;
+    margin-bottom: 16px;
+  }
+  .pageDetails__person__subtitle {
+    text-align: center;
+    color: #bdac8d;
+    font-family: "Archivo";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  .pageDetails__person__text {
+    color: #777;
+    text-align: center;
+    font-family: "Archivo";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .pageDetails__cancellation {
+    width: 75%;
+    margin-top: 50px;
+    padding: 50px;
+  }
+  .pageDetails__cancellation h2 {
+    color: #222;
+    font-family: "Old Standard TT";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .pageDetails__cancellation hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 35px;
+  }
+  .pageDetails__cancellation p {
+    color: #777;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .related {
+    padding: 0px 50px;
+  }
+  .related__title {
+    width: 85%;
+    color: #222;
+    font-family: "Old Standard TT";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 20px auto;
+  }
+  .related__rooms {
+    margin: 20px auto;
+    width: 85%;
+    gap: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -2145,24 +2368,8 @@
 
 body {
   min-width: 320px;
+}
+
+html {
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
-
-.alert-success {
-  background-color: #4CAF50;
-  font-size: 24px;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  margin: 40px;
-}
-
-.alert-error {
-  background-color: #f71602;
-  font-size: 24px;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  margin: 40px;
-}

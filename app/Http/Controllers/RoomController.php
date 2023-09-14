@@ -38,16 +38,10 @@ class RoomController extends Controller
         ]);
     }
 
-    public function showSingle(string $id): View
+    public function showDetails(): View
     {
-        $room = Room::findOrFail($id);
-
-        return view('room-detail', [
-            'room' => $room,
-            'rooms' => Room::where('roomType', $room->roomType)
-                ->where('id', '<>', $id)
-                ->limit(2)
-                ->get()
+        return view('roomsDetails', [
+            'roomsDetails' => Room::all()
         ]);
     }
 }

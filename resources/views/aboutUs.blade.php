@@ -43,7 +43,7 @@
             </div>
             <div class="info__content-item" id="item-gold">
               <img
-                src="./assets/aboutUs/airport_mobile.png"
+                src="./assets/aboutUs/airport_mobile.svg"
                 alt="Airplane"
                 class="info__content-img"
               />
@@ -290,3 +290,4 @@
         </div>
       </section>
     </main>
+@endsection

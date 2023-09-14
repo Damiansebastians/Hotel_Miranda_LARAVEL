@@ -34,7 +34,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -68,7 +68,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -85,7 +85,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -119,7 +119,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -136,7 +136,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -153,7 +153,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -170,7 +170,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -187,7 +187,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -204,7 +204,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -221,7 +221,7 @@
                     tempor.</p>
                 <div class="roomsPage__info">
                     <p>$345/Night</p>
-                    <p>Booking Now</p>
+                    <p><a href="roomsDetails.php">Booking Now</a></p>
                 </div>
             </div>
 
@@ -232,3 +232,4 @@
 
         </section>
     </main>
+@endsection
