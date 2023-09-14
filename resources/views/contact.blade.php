@@ -11,8 +11,8 @@
             </div>
             <div class="ultimate__box">
                 <span class="ultimate__box--link">
-                    <a href="index.html">Home |&nbsp;</a>
-                    <a href="about.html">Blog</a>
+                    <a href="index">Home |&nbsp;</a>
+                    <a href="about">Blog</a>
                 </span>
             </div>
         </section>

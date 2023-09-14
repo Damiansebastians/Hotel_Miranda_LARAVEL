@@ -39,10 +39,15 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/roomsDetails', function () {
+
+    return view('roomsDetails');
+});
+
 
 Route::get('/rooms', [RoomController::class, 'index']);
+Route::get('/roomsDetails', [RoomController::class, 'showDetails']);
 
-Route::get('/roomsDetails.php', [RoomsController::class, 'index']);
 
 Route::get('/about', [AboutUsController::class, 'index']);
 
@@ -50,9 +55,6 @@ Route::get("/offers", [OffersController::class, "index"]);
 
 Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'store']);
-
-
-
 
 
 require __DIR__ . '/auth.php';

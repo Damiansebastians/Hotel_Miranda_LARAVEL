@@ -26,7 +26,7 @@ class RoomController extends Controller
                 $bookings = Booking::all()->toArray();
                 $availableRooms = [];
                 foreach ($rooms as $room) {
-                    if (count($room->roomAvailability( $bookings, $request->checkIn, $request->checkOut)) === 0) {
+                    if (count($room->roomAvailability($bookings, $request->checkIn, $request->checkOut)) === 0) {
                         $availableRooms[] = $room;
                     }
                 }
@@ -40,8 +40,6 @@ class RoomController extends Controller
 
     public function showDetails(): View
     {
-        return view('roomsDetails', [
-            'roomsDetails' => Room::all()
-        ]);
+        return view('roomsDetails');
     }
 }

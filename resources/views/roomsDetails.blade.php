@@ -1,5 +1,5 @@
 @extends("layout")
-@section("title","Room Details")
+@section("title","RoomDetails")
 @section("content")
 
 <!-- MAIN -->
@@ -11,8 +11,8 @@
             </div>
             <div class="ultimate__box">
                 <span class="ultimate__box--link">
-                    <a href="index.html">Home |&nbsp;</a>
-                    <a href="about.html">Rooms Details</a>
+                    <a href="index">Home |&nbsp;</a>
+                    <a href="roomsDetails">Rooms Details</a>
                 </span>
             </div>
         </section>
@@ -201,7 +201,7 @@ Guests staying in a Luxury Double Bed room can indulge in modern amenities, incl
                 tempor.</p>
             <div class="roomsPage__info">
                 <p>$345/Night</p>
-                <p><a href="roomsDetails.html">Booking Now</a></p>
+                <p><a href="roomsDetails">Booking Now</a></p>
             </div>
           </div>
 
@@ -218,7 +218,7 @@ Guests staying in a Luxury Double Bed room can indulge in modern amenities, incl
                 tempor.</p>
             <div class="roomsPage__info">
                 <p>$345/Night</p>
-                <p><a href="roomsDetails.html">Booking Now</a></p>
+                <p><a href="roomsDetails">Booking Now</a></p>
             </div>
           </div>
       </section>   

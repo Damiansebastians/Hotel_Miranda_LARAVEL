@@ -24,19 +24,19 @@
                     <img class="toggle__menu__open" src="./assets/header/open_menu_mobile.png" alt="Menu open">
                 </div>
                 <ul class="menu__mobile" style="display: none;">
-                    <li class="menu__item"><a href="about.php">About Us</a></li>
-                    <li class="menu__item"><a href="rooms.php">Rooms</a></li>
-                    <li class="menu__item"><a href="offers.php">Offers</a></li>
-                    <li class="menu__item"><a href="contact.php">Contact</a></li>
+                    <li class="menu__item"><a href="about">About Us</a></li>
+                    <li class="menu__item"><a href="rooms">Rooms</a></li>
+                    <li class="menu__item"><a href="offers">Offers</a></li>
+                    <li class="menu__item"><a href="contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="header__logo"><a href="index.php"><img src="./assets/header/logo_mobile.png" alt="Logo"></a></div>
+            <div class="header__logo"><a href="index"><img src="./assets/header/logo_mobile.png" alt="Logo"></a></div>
             <div class="desktop">
                 <ul class="menu__desktop">
-                    <li class="menu__desktop__item"><a href="about.php">About Us</a></li>
-                    <li class="menu__desktop__item"><a href="rooms.php">Rooms</a></li>
-                    <li class="menu__desktop__item"><a href="offers.php">Offers</a></li>
-                    <li class="menu__desktop__item"><a href="contact.php">Contact</a></li>
+                    <li class="menu__desktop__item"><a href="about">About Us</a></li>
+                    <li class="menu__desktop__item"><a href="rooms">Rooms</a></li>
+                    <li class="menu__desktop__item"><a href="offers">Offers</a></li>
+                    <li class="menu__desktop__item"><a href="contact">Contact</a></li>
                 </ul>
             </div>
             <div class="header__user-button"><img src="./assets/header/login_mobile.png" alt="UserLogin"></div>
