@@ -2348,7 +2348,7 @@
     margin-top: 65px;
   }
   .roomsPage__box {
-    background-color: #ffffff;
+    background-color: #ffff;
     transition: transform 0.3s ease;
     box-shadow: 6px 6px 6px 0px rgba(255, 255, 255, 0.5);
   }
