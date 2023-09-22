@@ -30,8 +30,8 @@ jobs:
           target: /var/www/Hotel_Miranda_LARAVEL
 
       - name: SSH into EC2 and deploy
-        uses: appleboy/ssh-action@main
-        
+        uses: appleboy/ssh-action@v1.0.0
+
         with:
           host: ${{ secrets.HOST }}
           username: ubuntu
