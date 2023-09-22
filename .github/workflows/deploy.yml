@@ -22,7 +22,7 @@ jobs:
         uses: appleboy/scp-action@master
 
         with:
-          host: ${{ secrets.HOST }}
+          host: 35.180.58.242
           username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: ./
