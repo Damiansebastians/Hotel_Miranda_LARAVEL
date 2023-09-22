@@ -18,7 +18,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/Hotel_Miranda_LARAVEL
+            cd /var/www/html/Hotel_Miranda_LARAVEL
             git pull 
             php artisan migrate
             php artisan config:cache
