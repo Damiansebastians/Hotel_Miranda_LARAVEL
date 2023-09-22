@@ -20,7 +20,8 @@ jobs:
           npm run production
 
       - name: Copy files to EC2
-        uses: appleboy/scp-action@v2
+        uses: appleboy/scp-action@master
+
         with:
           host: ${{ secrets.HOST }}
           username: ubuntu
@@ -29,7 +30,8 @@ jobs:
           target: /var/www/Hotel_Miranda_LARAVEL
 
       - name: SSH into EC2 and deploy
-        uses: appleboy/ssh-action@v0.10.0
+        uses: appleboy/ssh-action@v0
+
         with:
           host: ${{ secrets.HOST }}
           username: ubuntu
